@@ -1,0 +1,54 @@
+@use 'variaveis';
+
+.plans {
+    padding: 9.4vw;
+
+    h2 {
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+
+    &__item {
+        align-items: center;
+        padding: 60px 44px 44px;
+        max-width: 380px;
+        width: 100%;
+
+        &:nth-child(2) {
+            background-image: url(../images/fundo_combo_plus.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        img {
+            height: 83px;
+        }
+
+        span {
+            align-items: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        strong {
+            text-align: center;
+            display: block;
+            margin-top: 24px;
+        }
+    }
+    }
+    p {
+        text-align: center;
+        padding-top: 8px;
+    }
+    .text {
+        color: variaveis.$corTextoSegundario;
+        padding: 1px 5px 1px 5px;
+        display: block;
+        justify-content: space-around;
+    }
+}

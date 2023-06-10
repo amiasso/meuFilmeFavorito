@@ -13,31 +13,155 @@
 <body>
     <section class="hero">
         <div class="hero__content">
-                <h1 class="hero__content__branding"><span class="hero__content__branding__amarelo">Meu</span><span class="hero__content__branding__verde">Filme</span>
-                    <spa class="hero__content__branding__azul">Favorito</spa></h1>
+                <h1 class="hero__content__branding">
+                    <span class="hero__content__branding__amarelo">Meu</span>
+                    <span class="hero__content__branding__verde">Filme</span>
+                    <spa class="hero__content__branding__azul">Favorito</spa>
+                </h1>
                 <h3 class="title--small">As melhores histórias em um só lugar</h3>
                 <p>
-                    <a href="#" class="link--text">Assinar o Meu Filme Favorito</a>
+                    <a href="#" class="link--text">Assinar o
+                        <span class="hero__content__branding__amarelo">Meu</span>
+                        <span class="hero__content__branding__verde">Filme</span>
+                        <spa class="hero__content__branding__azul">Favorito</spa> 
+                    </a>
                     <br>
                     <span class="text">R$27,90/mês ou 279,90/ano à vista</span>
                 </p>
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="disney+">
-                    <button>Assine agora</button>
+                    <span class="hero__content__branding__amarelo">Meu</span>
+                    <span class="hero__content__branding__verde">Filme</span>
+                    <spa class="hero__content__branding__azul">Favorito</spa>
+                    <button class="button">Assine agora</button>
                     <span class="text">R$ 45,90/mês</span>
                 </li>
                 <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="star+">
-                    <button>Assine agora</button>
+                    <span class="hero__content__branding__amarelo">Meu</span>
+                    <span class="hero__content__branding__verde">Filme</span>
+                    <spa class="hero__content__branding__azul">Favorito</spa>
+                    <button class="button">Assine agora</button>
                     <span class="text">R$ 55,90/mês</span>
                 </li>
             </ul>
             <p class="text--small">
-                *Opreço pode variar no caso da assinatura for em outra plataforma.
+                *O preço pode variar no caso da assinatura for em outra plataforma.
             </p>
         </div>
     </section>
-
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">Em Breve</button>
+            <button data-tab-button="populares" class="shows__tabs__button">Mais Populares</button>
+            <button data-tab-button="star_plus" class="shows__tabs__button">Mais star+</button>
+        </nav>
+        
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+            <li  class="shows__list__item">
+                <img src="./dist/images/em_breve/desencantada.jpg" alt="desencantada">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="lobisomem">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="sem limites">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="santa clauses">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg" alt="willow">
+            </li>
+        </ul>
+        <ul data-tab-id="populares" class="shows__list">
+            <li  class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="desencantada">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="lobisomem">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="sem limites">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="spidey">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="santa clauses">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="willow">
+            </li>
+        </ul>
+        <ul data-tab-id="star_plus" class="shows__list">
+            <li  class="shows__list__item">
+                <img src="./dist/images/mais_populares/bluey.jpg" alt="desencantada">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="lobisomem">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="sem limites">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="spidey">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/mais_populares/red.jpg" alt="santa clauses">
+            </li>
+            <li  class="shows__list__item">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="willow">
+            </li>
+        </ul>
+        
+    </section>
+    <section class="plans">
+        <h2 class="title--big">Escolha seu plano</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                    <img src="./src/images/logos/disneyplus_underline.png" alt="disney+">
+                <strong class="title--small">R$27,90/mês</strong>
+                <p class="text--big">
+                    <span class="hero__content__branding__amarelo">Meu</span>
+                    <span class="hero__content__branding__verde">Filme</span>
+                    <spa class="hero__content__branding__azul">Favorito</spa>
+                    você encontra as ultimas estreias do cinema, originais e classicos inesqueciveis.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./src/images/logos/disney_star_plus_sm.png" alt="disney+">
+            <strong class="title--small">R$27,90/mês</strong>
+            <p class="text--big">
+                <span class="hero__content__branding__amarelo">Meu</span>
+                <span class="hero__content__branding__verde">Filme</span>
+                <spa class="hero__content__branding__azul">Favorito</spa>
+                você encontra as ultimas estreias do cinema, originais e classicos inesqueciveis.
+            </p>
+            <button class="button">Assine agora</button>
+        </li>
+        <li class="plans__list__item">
+            <img src="./src/images/logos/disney_star_plus_starzplay_underline.png" alt="disney+">
+        <strong class="title--small">R$27,90/mês</strong>
+        <p class="text--big">
+            <span class="hero__content__branding__amarelo">Meu</span>
+            <span class="hero__content__branding__verde">Filme</span>
+            <spa class="hero__content__branding__azul">Favorito</spa>
+            você encontra as ultimas estreias do cinema, originais e classicos inesqueciveis.
+        </p>
+        <button class="button">Assine agora</button>
+    </li>
+        </ul>
+            
+        <p class="text--small">* preço pode variar dependendo da plataforma em que for assinar o 
+            <span class="hero__content__branding__amarelo">Meu</span>
+            <span class="hero__content__branding__verde">Filme</span>
+            <spa class="hero__content__branding__azul">Favorito</spa>
+        </p>
+    </section>
+<script src="./src/scripts/main.js"></script>
 </body>
 </html>
