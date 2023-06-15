@@ -1,0 +1,74 @@
+@use 'variaveis';
+
+.faq {
+    padding: 5.6vw;
+
+    @media (max-width: 768px) {
+        padding: 0 1px 1px;
+        width: 100%;
+    }
+    
+
+    h2 {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__questions {
+
+        &__item {
+            background-color: variaveis.$corDeFundoFaq;
+            margin-bottom: 16px;
+            
+
+            &__question {
+                color:variaveis.$corPalavrasFaq;
+                font-size: 20px;
+                padding: 24px;
+                display: block;
+                cursor: pointer;
+                position: relative;
+                
+
+                &::after {
+                    content: '+';
+                    position: absolute;
+                    top: 0;
+                    right: 24px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 48px;
+
+                    @media (max-width: 768px) {
+                        left: 340px;
+                        width: 100%;
+                    }
+                    
+                }
+            }
+            &__answer {
+                height: 0;
+                overflow: hidden;
+                padding: 0 24px;
+                transition: height, .5s ease;
+            }
+
+            &--is-open {
+
+                .faq__questions__item__question::after{
+                    content: '-';
+                }
+
+                .faq__questions__item__answer {
+                    height: auto;
+                    padding-top: 24px;
+                    padding-bottom:24px ;
+                    transition: height, .5s ease;
+
+                    
+                }
+            }
+        }
+    }
+}
